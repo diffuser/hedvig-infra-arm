@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachines_vm_jump_name": {
+            "value": null
+        },
+        "virtualMachines_vm_proxy_name": {
+            "value": null
+        },
+        "storageAccounts_sahedvig_name": {
+            "value": null
+        },
+        "networkInterfaces_ni_jump_name": {
+            "value": null
+        },
+        "networkInterfaces_ni_proxy_name": {
+            "value": null
+        },
+        "publicIPAddresses_pip_jump_name": {
+            "value": null
+        },
+        "virtualNetworks_vnet_hedvig_name": {
+            "value": null
+        },
+        "virtualMachines_vm_deployment_name": {
+            "value": null
+        },
+        "virtualMachines_vm_storagenode0_name": {
+            "value": null
+        },
+        "virtualMachines_vm_storagenode1_name": {
+            "value": null
+        },
+        "virtualMachines_vm_storagenode2_name": {
+            "value": null
+        },
+        "networkInterfaces_ni_deployment_name": {
+            "value": null
+        },
+        "networkSecurityGroups_nsg_public_name": {
+            "value": null
+        },
+        "networkInterfaces_ni_storagenode0_name": {
+            "value": null
+        },
+        "networkInterfaces_ni_storagenode1_name": {
+            "value": null
+        },
+        "networkInterfaces_ni_storagenode2_name": {
+            "value": null
+        },
+        "networkSecurityGroups_nsg_private_name": {
+            "value": null
+        }
+    }
+}
