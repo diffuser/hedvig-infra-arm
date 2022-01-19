@@ -77,6 +77,10 @@
         "osDiskType": {
             "defaultValue": "Standard_LRS",
             "type": "string"
+        },
+        "ssh_public_key": {
+            "type": "string",
+            "defaultValue": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIXGCzUEWv8RpNnaS19vzb4vQwzeL6u0To5BL5BOUB7GeLXnBK2cRv4CnS9xA/0g7udwEoURBOMzrwfpY/vjCzHKauPjkBMqNX3xGTYKmmJxqT7DKCrUu/ItQlAPcy7AiyzAuoXEutImVE30O6FnWUUk+Tb8avx/b3/tbl+DARcox9Dz1ga/JE75/CNzaX4gQz26//wj8puveCiNnFAzH8O8AR15EgpFEycNlQ/pz+iPsqtEGuksUwSFCkzajqT9PdMA3B9X/A9xC+ZynATpZbICVWiuvg6Qkl6kZm9SwzM39enqmcDfnHJ5K1BFtGdf/B8+4uvBp1OnomIYxv+aL9"
         }        
     },
     "variables": {},
@@ -533,7 +537,7 @@
                             "publicKeys": [
                                 {
                                     "path": "/home/azureuser/.ssh/authorized_keys",          
-                                    "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIXGCzUEWv8RpNnaS19vzb4vQwzeL6u0To5BL5BOUB7GeLXnBK2cRv4CnS9xA/0g7udwEoURBOMzrwfpY/vjCzHKauPjkBMqNX3xGTYKmmJxqT7DKCrUu/ItQlAPcy7AiyzAuoXEutImVE30O6FnWUUk+Tb8avx/b3/tbl+DARcox9Dz1ga/JE75/CNzaX4gQz26//wj8puveCiNnFAzH8O8AR15EgpFEycNlQ/pz+iPsqtEGuksUwSFCkzajqT9PdMA3B9X/A9xC+ZynATpZbICVWiuvg6Qkl6kZm9SwzM39enqmcDfnHJ5K1BFtGdf/B8+4uvBp1OnomIYxv+aL9"
+                                    "keyData": "[parameters('ssh_public_key')]"
                                 }
                             ]
                         }
@@ -602,7 +606,7 @@
                             "publicKeys": [
                                 {
                                     "path": "/home/azureuser/.ssh/authorized_keys",          
-                                    "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIXGCzUEWv8RpNnaS19vzb4vQwzeL6u0To5BL5BOUB7GeLXnBK2cRv4CnS9xA/0g7udwEoURBOMzrwfpY/vjCzHKauPjkBMqNX3xGTYKmmJxqT7DKCrUu/ItQlAPcy7AiyzAuoXEutImVE30O6FnWUUk+Tb8avx/b3/tbl+DARcox9Dz1ga/JE75/CNzaX4gQz26//wj8puveCiNnFAzH8O8AR15EgpFEycNlQ/pz+iPsqtEGuksUwSFCkzajqT9PdMA3B9X/A9xC+ZynATpZbICVWiuvg6Qkl6kZm9SwzM39enqmcDfnHJ5K1BFtGdf/B8+4uvBp1OnomIYxv+aL9"
+                                    "keyData": "[parameters('ssh_public_key')]"
                                 }
                             ]
                         }
@@ -681,7 +685,7 @@
                             "publicKeys": [
                                 {
                                     "path": "/home/azureuser/.ssh/authorized_keys",          
-                                    "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIXGCzUEWv8RpNnaS19vzb4vQwzeL6u0To5BL5BOUB7GeLXnBK2cRv4CnS9xA/0g7udwEoURBOMzrwfpY/vjCzHKauPjkBMqNX3xGTYKmmJxqT7DKCrUu/ItQlAPcy7AiyzAuoXEutImVE30O6FnWUUk+Tb8avx/b3/tbl+DARcox9Dz1ga/JE75/CNzaX4gQz26//wj8puveCiNnFAzH8O8AR15EgpFEycNlQ/pz+iPsqtEGuksUwSFCkzajqT9PdMA3B9X/A9xC+ZynATpZbICVWiuvg6Qkl6kZm9SwzM39enqmcDfnHJ5K1BFtGdf/B8+4uvBp1OnomIYxv+aL9"
+                                    "keyData": "[parameters('ssh_public_key')]"
                                 }
                             ]
                         }
@@ -756,7 +760,7 @@
                             "publicKeys": [
                                 {
                                     "path": "/home/azureuser/.ssh/authorized_keys",          
-                                    "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIXGCzUEWv8RpNnaS19vzb4vQwzeL6u0To5BL5BOUB7GeLXnBK2cRv4CnS9xA/0g7udwEoURBOMzrwfpY/vjCzHKauPjkBMqNX3xGTYKmmJxqT7DKCrUu/ItQlAPcy7AiyzAuoXEutImVE30O6FnWUUk+Tb8avx/b3/tbl+DARcox9Dz1ga/JE75/CNzaX4gQz26//wj8puveCiNnFAzH8O8AR15EgpFEycNlQ/pz+iPsqtEGuksUwSFCkzajqT9PdMA3B9X/A9xC+ZynATpZbICVWiuvg6Qkl6kZm9SwzM39enqmcDfnHJ5K1BFtGdf/B8+4uvBp1OnomIYxv+aL9"
+                                    "keyData": "[parameters('ssh_public_key')]"
                                 }
                             ]
                         }
@@ -831,7 +835,7 @@
                             "publicKeys": [
                                 {
                                     "path": "/home/azureuser/.ssh/authorized_keys",          
-                                    "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIXGCzUEWv8RpNnaS19vzb4vQwzeL6u0To5BL5BOUB7GeLXnBK2cRv4CnS9xA/0g7udwEoURBOMzrwfpY/vjCzHKauPjkBMqNX3xGTYKmmJxqT7DKCrUu/ItQlAPcy7AiyzAuoXEutImVE30O6FnWUUk+Tb8avx/b3/tbl+DARcox9Dz1ga/JE75/CNzaX4gQz26//wj8puveCiNnFAzH8O8AR15EgpFEycNlQ/pz+iPsqtEGuksUwSFCkzajqT9PdMA3B9X/A9xC+ZynATpZbICVWiuvg6Qkl6kZm9SwzM39enqmcDfnHJ5K1BFtGdf/B8+4uvBp1OnomIYxv+aL9"
+                                    "keyData": "[parameters('ssh_public_key')]"
                                 }
                             ]
                         }
@@ -905,7 +909,7 @@
                             "publicKeys": [
                                 {
                                     "path": "/home/azureuser/.ssh/authorized_keys",          
-                                    "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIXGCzUEWv8RpNnaS19vzb4vQwzeL6u0To5BL5BOUB7GeLXnBK2cRv4CnS9xA/0g7udwEoURBOMzrwfpY/vjCzHKauPjkBMqNX3xGTYKmmJxqT7DKCrUu/ItQlAPcy7AiyzAuoXEutImVE30O6FnWUUk+Tb8avx/b3/tbl+DARcox9Dz1ga/JE75/CNzaX4gQz26//wj8puveCiNnFAzH8O8AR15EgpFEycNlQ/pz+iPsqtEGuksUwSFCkzajqT9PdMA3B9X/A9xC+ZynATpZbICVWiuvg6Qkl6kZm9SwzM39enqmcDfnHJ5K1BFtGdf/B8+4uvBp1OnomIYxv+aL9"
+                                    "keyData": "[parameters('ssh_public_key')]"
                                 }
                             ]
                         }
